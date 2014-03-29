@@ -1,0 +1,169 @@
+﻿body {
+    background-image: url(../imgs/body1.jpg);
+    font-size: small;
+}
+
+#appListContainerDiv {
+    overflow-y: hidden;
+    display: block;
+    margin-left: 28px;
+    height: 500px;
+    margin-top: 46px;
+    opacity: 1;
+}
+
+.deskappIcon_block {
+    display: inline;
+    cursor: pointer;
+    float: left;
+    width: 88px;
+    height: 88px;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+}
+
+.deskappIcon {
+    margin: 0 auto;
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+
+.deskappIcon_Img {
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.deskappName_inner {
+    color: white;
+    height: 20px;
+    margin: 3px 0 0 0;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.deskappName {
+    color: white;
+    height: 23px;
+    margin: 0 0 0 0;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.deskappIcon_block:hover {
+    background-image: url(../imgs/icon_mouseover_bg.png);
+    background-repeat: no-repeat;
+}
+
+.headbar {
+    border-width: thin;
+    width: 100%;
+    height: 27px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+    .headbar div {
+        float: right;
+    }
+
+.titleText {
+    font-weight: bold;
+}
+
+.win_icon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 4px;
+    background-repeat: no-repeat;
+}
+
+.win_titlebar_icon {
+    margin-left: 4px;
+    background-image: url(../imgs/tools/app_titlebar.png);
+}
+
+.win_toolbar_home {
+    background-position: -15px -60px;
+}
+
+    .win_toolbar_home:hover {
+        background-position: -15px -32px;
+    }
+
+.win_toolbar_like {
+    background-position: -76px -60px;
+}
+
+    .win_toolbar_like:hover {
+        background-position: -76px -32px;
+    }
+
+.win_toolbar_good {
+    background-position: -141px -60px;
+}
+
+    .win_toolbar_good:hover {
+        background-position: -141px -32px;
+    }
+
+.window_title_warp {
+    background-image: url(../imgs/sprite_repeat_x_png.png);
+}
+
+.win_toolbar_icon {
+    margin-right: 4px;
+    background-image: url(../imgs/tools/sprite_main_png.png);
+}
+
+.win_toolbar_min {
+    background-position: -5px -60px;
+}
+
+    .win_toolbar_min:hover {
+        background-position: -5px -32px;
+    }
+
+.win_toolbar_mid {
+    background-position: -35px -60px;
+}
+
+    .win_toolbar_mid:hover {
+        background-position: -35px -31px;
+    }
+
+.win_toolbar_close {
+    background-position: -65px -60px;
+}
+
+    .win_toolbar_close:hover {
+        background-position: -65px -31px;
+    }
+
+/* 窗口的resize 边框*/
+.win_resize_bline {
+    width: 6px;
+    height: 6px;
+}
+/*窗体圆角*/
+.window_border_radius {
+    border: 2px solid #C0C0C0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}

@@ -1,0 +1,10 @@
+<div class="taskIcon taskIcon_block_x">
+	<div class="taskIcon_warp">
+		<div class="taskIcon_img">
+			<img src="imgs/2.png" />
+		</div>
+		<div class="taskIcon_name">
+			<div>±©∑Á”∞“Ù</div>
+		</div>
+	</div>
+</div>

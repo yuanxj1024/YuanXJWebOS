@@ -1,0 +1,124 @@
+﻿<html>
+<head>
+    <title>demo</title>
+    <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="plugin/yxj.dragdrop.js"></script>
+    <script type="text/javascript" src="plugin/yxj.resize.js"></script>
+    <script type="text/javascript">
+        //$(function () {
+        //    $("p").dragdrop({ container:$("#demo")});
+        //});
+    </script>
+
+    <style type="text/css">
+        #rRightDown, #rLeftDown, #rLeftUp, #rRightUp, #rRight, #rLeft, #rUp, #rDown {
+            position: absolute;
+            background: #C00;
+            width: 7px;
+            height: 7px;
+            z-index: 5;
+            font-size: 0;
+        }
+
+        #rLeftDown, #rRightUp {
+            cursor: ne-resize;
+        }
+
+        #rRightDown, #rLeftUp {
+            cursor: nw-resize;
+        }
+
+        #rRight, #rLeft {
+            cursor: e-resize;
+        }
+
+        #rUp, #rDown {
+            cursor: n-resize;
+        }
+
+        #rLeftDown {
+            left: -4px;
+            bottom: -4px;
+        }
+
+        #rRightUp {
+            right: -4px;
+            top: -4px;
+        }
+
+        #rRightDown {
+            right: -4px;
+            bottom: -4px;
+            background-color: #00F;
+        }
+
+        #rLeftUp {
+            left: -4px;
+            top: -4px;
+        }
+
+        #rRight {
+            right: -4px;
+            top: 50%;
+            margin-top: -4px;
+        }
+
+        #rLeft {
+            left: -4px;
+            top: 50%;
+            margin-top: -4px;
+        }
+
+        #rUp {
+            top: -4px;
+            left: 50%;
+            margin-left: -4px;
+        }
+
+        #rDown {
+            bottom: -4px;
+            left: 50%;
+            margin-left: -4px;
+        }
+
+        #dragDiv {
+            border: 1px solid #000000;
+            width: 500px;
+            height: 400px;
+            top: 50px;
+            left: 50px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="demo" style="width:100px; height:100px; background-color:red;">
+    <p style="background-color:blue;"> this is title</p>
+</div>-->
+    <div id="dragDiv">
+        <div id="rRightDown"></div>
+        <div id="rLeftDown"></div>
+        <div id="rRightUp"></div>
+        <div id="rLeftUp"></div>
+        <div id="rRight"></div>
+        <div id="rLeft"></div>
+        <div id="rUp"></div>
+        <div id="rDown"></div>
+    </div>
+
+    <script>
+        var rs = new ElementResize("dragDiv");
+        rs.Set("rRightDown", "right-down");
+        rs.Set("rLeftDown", "left-down");
+
+        rs.Set("rRightUp", "right-up");
+        rs.Set("rLeftUp", "left-up");
+
+        rs.Set("rRight", "right");
+        rs.Set("rLeft", "left");
+
+        rs.Set("rUp", "up");
+        rs.Set("rDown", "down");
+    </script>
+</body>
+</html>
